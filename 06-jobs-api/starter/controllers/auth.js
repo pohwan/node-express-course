@@ -1,7 +1,6 @@
 const User = require("../models/User");
 const { StatusCodes } = require("http-status-codes");
 const { BadRequestError, UnauthenticatedError } = require("../errors");
-const jwt = require("jsonwebtoken");
 
 const register = async (req, res) => {
   // [optional] because we will have moongoose validator to check without writing code in controller
